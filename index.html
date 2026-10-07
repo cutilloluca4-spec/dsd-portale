@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D.S.D. — Digital Sports Desk</title>
+  
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-[#F2F4F4] text-[#12181B] antialiased">
+
+  <!-- ================================================================== -->
+  <!-- MODALE ONBOARDING (SENZA EMOJI)                                    -->
+  <!-- ================================================================== -->
+  <div id="onboarding" class="fixed inset-0 z-50 flex items-center justify-center bg-[#12181B]/90 p-4 backdrop-blur-xs">
+    <div id="onboarding-card" class="bg-white border border-[#E7EBEC] rounded-sm p-6 sm:p-8 max-w-lg w-full shadow-2xl">
+      
+      <!-- Testata Setup con Logo Originale SVG -->
+      <div class="flex items-center justify-between gap-4 mb-6 pb-4 border-b border-[#E7EBEC]">
+        <div class="h-9">
+          <svg class="h-full w-auto" viewBox="0 0 225.73 108.11" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <style>
+                .cls-1 { fill: #4f9eaf; }
+                .cls-2 { fill: #7dcad7; }
+              </style>
+            </defs>
+            <g id="Livello_1-2" data-name="Livello 1">
+              <g>
+                <polygon class="cls-1" points="116.88 27.21 146.17 27.2 139.57 0 110.29 0 116.88 27.21"/>
+                <polygon class="cls-1" points="92.91 79.76 122.19 79.76 115.61 52.56 86.53 52.56 92.91 79.76"/>
+                <polygon class="cls-1" points="28.17 40.56 22.88 18.56 30.21 18.56 33.75 18.56 29.29 0 0 0 10.71 44.54 19.16 79.76 48.44 79.76 44 61.21 33.12 61.21 28.17 40.56"/>
+                <path class="cls-2" d="M78.16,51.28l-1.61-6.73-6.46-26.85C67.59,7.32,58.3,0,47.63,0h-11.09s4.46,18.55,4.46,18.55h6.18c2.69,0,5.01,1.83,5.64,4.44l5.98,24.84,1.49,6.21c.11.47.17.94.17,1.39,0,2.77-2.22,5.75-5.81,5.75h-3.4s4.45,18.55,4.45,18.55h0c14.93,0,25.94-13.96,22.46-28.48Z"/>
+                <polygon class="cls-1" points="175.09 40.56 169.8 18.56 177.14 18.56 180.67 18.56 176.21 0 146.92 0 157.64 44.54 166.08 79.76 195.36 79.76 190.92 61.21 180.04 61.21 175.09 40.56"/>
+                <path class="cls-2" d="M225.08,51.28l-1.61-6.73-6.46-26.85C214.51,7.32,205.23,0,194.55,0h-11.09s4.46,18.55,4.46,18.55h6.18c2.69,0,5.01,1.83,5.64,4.44l5.98,24.84,1.49,6.21c.11.47.17.94.17,1.39,0,2.77-2.22,5.75-5.81,5.75h-3.4s4.45,18.55,4.45,18.55h0c14.93,0,25.94-13.96,22.46-28.48Z"/>
+                <path class="cls-2" d="M129.44,79.75h0c14.93.01,25.93-13.95,22.44-28.46l-3.86-16.02-29.28.02h-7.22S103.03,0,103.03,0h-.02c-14.92,0-25.91,13.95-22.42,28.46l3.87,16.08h29.29s0,0,0,0h7.22l8.47,35.2Z"/>
+                <g>
+                  <path class="cls-1" d="M19.16,94.32h5.58c4.15,0,5.94,3.02,5.94,6.73s-1.79,6.73-5.94,6.73h-5.58v-13.46ZM21.52,105.86h2.32c3.7,0,4.49-2.11,4.49-4.81s-.79-4.81-4.49-4.81h-2.32v9.62Z"/>
+                  <path class="cls-1" d="M32.78,94.32h2.36v13.46h-2.36v-13.46Z"/>
+                  <path class="cls-1" d="M49.77,107.79h-1.51l-.36-1.58c-1.26,1.43-2.41,1.9-4.05,1.9-4.04,0-6.45-3.21-6.45-7.05s2.41-7.05,6.45-7.05c2.94,0,5.41,1.57,5.77,4.6h-2.3c-.23-1.77-1.77-2.68-3.47-2.68-2.89,0-4.09,2.55-4.09,5.13s1.21,5.13,4.09,5.13c2.41.04,3.73-1.41,3.77-3.7h-3.58v-1.79h5.73v7.09Z"/>
+                  <path class="cls-1" d="M52.33,94.32h2.36v13.46h-2.36v-13.46Z"/>
+                  <path class="cls-1" d="M56.29,94.32h10.9v2.04h-4.28v11.43h-2.36v-11.43h-4.26v-2.04Z"/>
+                  <path class="cls-1" d="M70.62,94.32h2.51l5.19,13.46h-2.53l-1.26-3.56h-5.37l-1.26,3.56h-2.43l5.17-13.46ZM69.79,102.43h4.11l-2.02-5.79h-.06l-2.04,5.79Z"/>
+                  <path class="cls-1" d="M79.6,94.32h2.36v11.43h6.85v2.04h-9.2v-13.46Z"/>
+                  <path class="cls-1" d="M97.21,103.3c0,2.07,1.53,2.89,3.41,2.89,2.07,0,2.85-1.02,2.85-2.04s-.57-1.45-1.11-1.66c-.94-.36-2.17-.6-4.02-1.11-2.3-.62-2.98-2.02-2.98-3.41,0-2.7,2.49-3.96,4.92-3.96,2.81,0,5.17,1.49,5.17,4.3h-2.36c-.11-1.73-1.28-2.38-2.9-2.38-1.09,0-2.47.4-2.47,1.75,0,.94.64,1.47,1.6,1.73.21.06,3.19.83,3.88,1.04,1.77.53,2.62,2.04,2.62,3.43,0,3.02-2.68,4.22-5.36,4.22-3.07,0-5.56-1.47-5.62-4.81h2.36Z"/>
+                  <path class="cls-1" d="M107.89,94.32h5.94c3.85,0,4.58,2.49,4.58,4.17s-.74,4.15-4.58,4.13h-3.58v5.17h-2.36v-13.46ZM110.24,100.7h3.45c1.06,0,2.36-.53,2.36-2.23s-1.07-2.23-2.32-2.23h-3.49v4.45Z"/>
+                  <path class="cls-1" d="M132.65,101.06c0,3.85-2.41,7.05-6.45,7.05s-6.45-3.21-6.45-7.05,2.41-7.05,6.45-7.05,6.45,3.21,6.45,7.05ZM122.1,101.06c0,2.58,1.21,5.13,4.09,5.13s4.09-2.55,4.09-5.13-1.21-5.13-4.09-5.13-4.09,2.55-4.09,5.13Z"/>
+                  <path class="cls-1" d="M134.79,94.32h6.43c2.94,0,4.45,1.36,4.45,3.64,0,2.58-1.79,3.24-2.23,3.39v.04c.81.11,2,.72,2,2.85,0,1.57.23,3,.74,3.55h-2.53c-.36-.58-.36-1.32-.36-1.98,0-2.47-.51-3.56-2.68-3.56h-3.47v5.54h-2.36v-13.46ZM137.15,100.45h3.87c1.49,0,2.3-.74,2.3-2.15,0-1.72-1.11-2.06-2.34-2.06h-3.83v4.21Z"/>
+                  <path class="cls-1" d="M146.45,94.32h10.9v2.04h-4.28v11.43h-2.36v-11.43h-4.26v-2.04Z"/>
+                  <path class="cls-1" d="M160.46,103.3c0,2.07,1.53,2.89,3.41,2.89,2.07,0,2.85-1.02,2.85-2.04s-.57-1.45-1.11-1.66c-.94-.36-2.17-.6-4.02-1.11-2.3-.62-2.98-2.02-2.98-3.41,0-2.7,2.49-3.96,4.92-3.96,2.81,0,5.17,1.49,5.17,4.3h-2.36c-.11-1.73-1.28-2.38-2.9-2.38-1.09,0-2.47.4-2.47,1.75,0,.94.64,1.47,1.6,1.73.21.06,3.19.83,3.88,1.04,1.77.53,2.62,2.04,2.62,3.43,0,3.02-2.68,4.22-5.36,4.22-3.07,0-5.56-1.47-5.62-4.81h2.36Z"/>
+                  <path class="cls-1" d="M176.38,94.32h5.58c4.15,0,5.94,3.02,5.94,6.73s-1.79,6.73-5.94,6.73h-5.58v-13.46ZM178.73,105.86h2.32c3.7,0,4.49-2.11,4.49-4.81s-.79-4.81-4.49-4.81h-2.32v9.62Z"/>
+                  <path class="cls-1" d="M189.99,94.32h9.69v2.04h-7.34v3.53h6.79v1.92h-6.79v3.94h7.47v2.04h-9.82v-13.46Z"/>
+                  <path class="cls-1" d="M203.42,103.3c0,2.07,1.53,2.89,3.41,2.89,2.07,0,2.85-1.02,2.85-2.04s-.57-1.45-1.11-1.66c-.94-.36-2.17-.6-4.02-1.11-2.3-.62-2.98-2.02-2.98-3.41,0-2.7,2.49-3.96,4.92-3.96,2.81,0,5.17,1.49,5.17,4.3h-2.36c-.11-1.73-1.28-2.38-2.9-2.38-1.09,0-2.47.4-2.47,1.75,0,.94.64,1.47,1.6,1.73.21.06,3.19.83,3.88,1.04,1.77.53,2.62,2.04,2.62,3.43,0,3.02-2.68,4.22-5.36,4.22-3.07,0-5.56-1.47-5.62-4.81h2.36Z"/>
+                  <path class="cls-1" d="M214.09,94.32h2.36v6.13l6-6.13h2.9l-5.37,5.37,5.75,8.09h-2.94l-4.41-6.43-1.92,1.9v4.53h-2.36v-13.46Z"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="font-mono text-[10px] text-[#7A8285] uppercase tracking-widest" id="ob-step-label">Passo 1 di 2</span>
+          <div class="w-20 bg-[#E7EBEC] h-1.5 rounded-full overflow-hidden">
+            <div id="ob-progress" class="bg-[#4E9EAF] h-full w-1/2 transition-all duration-300"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 1: Scelta dello sport (Senza Emoji) -->
+      <div id="ob-step-1">
+        <h2 class="text-2xl font-bold mb-2 text-[#12181B]">Seleziona Sport</h2>
+        <p class="text-sm text-[#7A8285] mb-6">Scegli la disciplina della tua associazione per caricare le categorie e lo scadenziario.</p>
+
+        <div class="grid grid-cols-1 gap-3 mb-6">
+          <button type="button" data-sport="calcio" class="sport-option flex items-center justify-between p-4 border border-[#E7EBEC] rounded-sm hover:border-[#4E9EAF] hover:bg-[#D8F0F3]/30 transition-all text-left cursor-pointer group">
+            <span class="font-bold text-[#12181B] group-hover:text-[#4E9EAF]">Calcio</span>
+            <span class="font-mono text-xs text-[#7A8285]">7 categorie</span>
+          </button>
+          <button type="button" data-sport="pallavolo" class="sport-option flex items-center justify-between p-4 border border-[#E7EBEC] rounded-sm hover:border-[#4E9EAF] hover:bg-[#D8F0F3]/30 transition-all text-left cursor-pointer group">
+            <span class="font-bold text-[#12181B] group-hover:text-[#4E9EAF]">Pallavolo</span>
+            <span class="font-mono text-xs text-[#7A8285]">6 categorie</span>
+          </button>
+          <button type="button" data-sport="basket" class="sport-option flex items-center justify-between p-4 border border-[#E7EBEC] rounded-sm hover:border-[#4E9EAF] hover:bg-[#D8F0F3]/30 transition-all text-left cursor-pointer group">
+            <span class="font-bold text-[#12181B] group-hover:text-[#4E9EAF]">Basket</span>
+            <span class="font-mono text-xs text-[#7A8285]">6 categorie</span>
+          </button>
+          <button type="button" data-sport="tennis" class="sport-option flex items-center justify-between p-4 border border-[#E7EBEC] rounded-sm hover:border-[#4E9EAF] hover:bg-[#D8F0F3]/30 transition-all text-left cursor-pointer group">
+            <span class="font-bold text-[#12181B] group-hover:text-[#4E9EAF]">Tennis</span>
+            <span class="font-mono text-xs text-[#7A8285]">7 categorie</span>
+          </button>
+          <button type="button" data-sport="altro" class="sport-option flex items-center justify-between p-4 border border-[#E7EBEC] rounded-sm hover:border-[#4E9EAF] hover:bg-[#D8F0F3]/30 transition-all text-left cursor-pointer group">
+            <span class="font-bold text-[#12181B] group-hover:text-[#4E9EAF]">Altro / Personalizzato</span>
+            <span class="font-mono text-xs text-[#7A8285]">Crea da zero</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- STEP 2: Categorie -->
+      <div id="ob-step-2" class="hidden">
+        <h2 class="text-2xl font-bold mb-2 text-[#12181B]">Personalizza Categorie</h2>
+        <p class="text-sm text-[#7A8285] mb-4">Verifica le categorie attive, elimina quelle non necessarie o aggiungine di nuove.</p>
+
+        <div id="altro-sport-input" class="mb-4 hidden">
+          <label class="block text-xs font-mono mb-1 text-[#7A8285]">Nome Società o Disciplina</label>
+          <input type="text" id="nome-sport-personalizzato" placeholder="es. Tennis Club o Rugby" class="w-full input-dsd mb-3" />
+        </div>
+
+        <div id="categorie-form-list" class="space-y-2 max-h-48 overflow-y-auto pr-1 mb-4">
+          <!-- Dinamico JS -->
+        </div>
+
+        <div class="flex gap-2 mb-6">
+          <input type="text" id="nuova-categoria" placeholder="Nuova categoria (es. Under 10)" class="flex-1 input-dsd" />
+          <button type="button" id="btn-aggiungi-categoria" class="btn-dsd-secondary text-xs py-2 px-4">Aggiungi</button>
+        </div>
+
+        <div class="flex items-center justify-between pt-4 border-t border-[#E7EBEC]">
+          <button type="button" id="ob-back" class="text-xs text-[#7A8285] hover:text-[#12181B] underline cursor-pointer">← Indietro</button>
+          <button type="button" id="ob-submit" class="btn-dsd-primary">Completa Setup →</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================================================================== -->
+  <!-- DASHBOARD PRINCIPALE                                               -->
+  <!-- ================================================================== -->
+  <div id="app" class="hidden min-h-screen flex flex-col">
+    
+    <!-- Header Fisso con SOLO IL LOGO GRAFICO -->
+    <header class="border-b border-[#E7EBEC] bg-white/95 backdrop-blur-md sticky top-0 z-40">
+      <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+        
+        <!-- SOLO LOGO ORIGINALE -->
+        <div class="flex items-center">
+          <div class="h-10 flex items-center cursor-pointer" title="Dashboard">
+            <svg class="h-9 w-auto" viewBox="0 0 225.73 108.11" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <style>
+                  .cls-1 { fill: #4f9eaf; }
+                  .cls-2 { fill: #7dcad7; }
+                </style>
+              </defs>
+              <g id="Livello_1-2" data-name="Livello 1">
+                <g>
+                  <polygon class="cls-1" points="116.88 27.21 146.17 27.2 139.57 0 110.29 0 116.88 27.21"/>
+                  <polygon class="cls-1" points="92.91 79.76 122.19 79.76 115.61 52.56 86.53 52.56 92.91 79.76"/>
+                  <polygon class="cls-1" points="28.17 40.56 22.88 18.56 30.21 18.56 33.75 18.56 29.29 0 0 0 10.71 44.54 19.16 79.76 48.44 79.76 44 61.21 33.12 61.21 28.17 40.56"/>
+                  <path class="cls-2" d="M78.16,51.28l-1.61-6.73-6.46-26.85C67.59,7.32,58.3,0,47.63,0h-11.09s4.46,18.55,4.46,18.55h6.18c2.69,0,5.01,1.83,5.64,4.44l5.98,24.84,1.49,6.21c.11.47.17.94.17,1.39,0,2.77-2.22,5.75-5.81,5.75h-3.4s4.45,18.55,4.45,18.55h0c14.93,0,25.94-13.96,22.46-28.48Z"/>
+                  <polygon class="cls-1" points="175.09 40.56 169.8 18.56 177.14 18.56 180.67 18.56 176.21 0 146.92 0 157.64 44.54 166.08 79.76 195.36 79.76 190.92 61.21 180.04 61.21 175.09 40.56"/>
+                  <path class="cls-2" d="M225.08,51.28l-1.61-6.73-6.46-26.85C214.51,7.32,205.23,0,194.55,0h-11.09s4.46,18.55,4.46,18.55h6.18c2.69,0,5.01,1.83,5.64,4.44l5.98,24.84,1.49,6.21c.11.47.17.94.17,1.39,0,2.77-2.22,5.75-5.81,5.75h-3.4s4.45,18.55,4.45,18.55h0c14.93,0,25.94-13.96,22.46-28.48Z"/>
+                  <path class="cls-2" d="M129.44,79.75h0c14.93.01,25.93-13.95,22.44-28.46l-3.86-16.02-29.28.02h-7.22S103.03,0,103.03,0h-.02c-14.92,0-25.91,13.95-22.42,28.46l3.87,16.08h29.29s0,0,0,0h7.22l8.47,35.2Z"/>
+                  <g>
+                    <path class="cls-1" d="M19.16,94.32h5.58c4.15,0,5.94,3.02,5.94,6.73s-1.79,6.73-5.94,6.73h-5.58v-13.46ZM21.52,105.86h2.32c3.7,0,4.49-2.11,4.49-4.81s-.79-4.81-4.49-4.81h-2.32v9.62Z"/>
+                    <path class="cls-1" d="M32.78,94.32h2.36v13.46h-2.36v-13.46Z"/>
+                    <path class="cls-1" d="M49.77,107.79h-1.51l-.36-1.58c-1.26,1.43-2.41,1.9-4.05,1.9-4.04,0-6.45-3.21-6.45-7.05s2.41-7.05,6.45-7.05c2.94,0,5.41,1.57,5.77,4.6h-2.3c-.23-1.77-1.77-2.68-3.47-2.68-2.89,0-4.09,2.55-4.09,5.13s1.21,5.13,4.09,5.13c2.41.04,3.73-1.41,3.77-3.7h-3.58v-1.79h5.73v7.09Z"/>
+                    <path class="cls-1" d="M52.33,94.32h2.36v13.46h-2.36v-13.46Z"/>
+                    <path class="cls-1" d="M56.29,94.32h10.9v2.04h-4.28v11.43h-2.36v-11.43h-4.26v-2.04Z"/>
+                    <path class="cls-1" d="M70.62,94.32h2.51l5.19,13.46h-2.53l-1.26-3.56h-5.37l-1.26,3.56h-2.43l5.17-13.46ZM69.79,102.43h4.11l-2.02-5.79h-.06l-2.04,5.79Z"/>
+                    <path class="cls-1" d="M79.6,94.32h2.36v11.43h6.85v2.04h-9.2v-13.46Z"/>
+                    <path class="cls-1" d="M97.21,103.3c0,2.07,1.53,2.89,3.41,2.89,2.07,0,2.85-1.02,2.85-2.04s-.57-1.45-1.11-1.66c-.94-.36-2.17-.6-4.02-1.11-2.3-.62-2.98-2.02-2.98-3.41,0-2.7,2.49-3.96,4.92-3.96,2.81,0,5.17,1.49,5.17,4.3h-2.36c-.11-1.73-1.28-2.38-2.9-2.38-1.09,0-2.47.4-2.47,1.75,0,.94.64,1.47,1.6,1.73.21.06,3.19.83,3.88,1.04,1.77.53,2.62,2.04,2.62,3.43,0,3.02-2.68,4.22-5.36,4.22-3.07,0-5.56-1.47-5.62-4.81h2.36Z"/>
+                    <path class="cls-1" d="M107.89,94.32h5.94c3.85,0,4.58,2.49,4.58,4.17s-.74,4.15-4.58,4.13h-3.58v5.17h-2.36v-13.46ZM110.24,100.7h3.45c1.06,0,2.36-.53,2.36-2.23s-1.07-2.23-2.32-2.23h-3.49v4.45Z"/>
+                    <path class="cls-1" d="M132.65,101.06c0,3.85-2.41,7.05-6.45,7.05s-6.45-3.21-6.45-7.05,2.41-7.05,6.45-7.05,6.45,3.21,6.45,7.05ZM122.1,101.06c0,2.58,1.21,5.13,4.09,5.13s4.09-2.55,4.09-5.13-1.21-5.13-4.09-5.13-4.09,2.55-4.09,5.13Z"/>
+                    <path class="cls-1" d="M134.79,94.32h6.43c2.94,0,4.45,1.36,4.45,3.64,0,2.58-1.79,3.24-2.23,3.39v.04c.81.11,2,.72,2,2.85,0,1.57.23,3,.74,3.55h-2.53c-.36-.58-.36-1.32-.36-1.98,0-2.47-.51-3.56-2.68-3.56h-3.47v5.54h-2.36v-13.46ZM137.15,100.45h3.87c1.49,0,2.3-.74,2.3-2.15,0-1.72-1.11-2.06-2.34-2.06h-3.83v4.21Z"/>
+                    <path class="cls-1" d="M146.45,94.32h10.9v2.04h-4.28v11.43h-2.36v-11.43h-4.26v-2.04Z"/>
+                    <path class="cls-1" d="M160.46,103.3c0,2.07,1.53,2.89,3.41,2.89,2.07,0,2.85-1.02,2.85-2.04s-.57-1.45-1.11-1.66c-.94-.36-2.17-.6-4.02-1.11-2.3-.62-2.98-2.02-2.98-3.41,0-2.7,2.49-3.96,4.92-3.96,2.81,0,5.17,1.49,5.17,4.3h-2.36c-.11-1.73-1.28-2.38-2.9-2.38-1.09,0-2.47.4-2.47,1.75,0,.94.64,1.47,1.6,1.73.21.06,3.19.83,3.88,1.04,1.77.53,2.62,2.04,2.62,3.43,0,3.02-2.68,4.22-5.36,4.22-3.07,0-5.56-1.47-5.62-4.81h2.36Z"/>
+                    <path class="cls-1" d="M176.38,94.32h5.58c4.15,0,5.94,3.02,5.94,6.73s-1.79,6.73-5.94,6.73h-5.58v-13.46ZM178.73,105.86h2.32c3.7,0,4.49-2.11,4.49-4.81s-.79-4.81-4.49-4.81h-2.32v9.62Z"/>
+                    <path class="cls-1" d="M189.99,94.32h9.69v2.04h-7.34v3.53h6.79v1.92h-6.79v3.94h7.47v2.04h-9.82v-13.46Z"/>
+                    <path class="cls-1" d="M203.42,103.3c0,2.07,1.53,2.89,3.41,2.89,2.07,0,2.85-1.02,2.85-2.04s-.57-1.45-1.11-1.66c-.94-.36-2.17-.6-4.02-1.11-2.3-.62-2.98-2.02-2.98-3.41,0-2.7,2.49-3.96,4.92-3.96,2.81,0,5.17,1.49,5.17,4.3h-2.36c-.11-1.73-1.28-2.38-2.9-2.38-1.09,0-2.47.4-2.47,1.75,0,.94.64,1.47,1.6,1.73.21.06,3.19.83,3.88,1.04,1.77.53,2.62,2.04,2.62,3.43,0,3.02-2.68,4.22-5.36,4.22-3.07,0-5.56-1.47-5.62-4.81h2.36Z"/>
+                    <path class="cls-1" d="M214.09,94.32h2.36v6.13l6-6.13h2.9l-5.37,5.37,5.75,8.09h-2.94l-4.41-6.43-1.92,1.9v4.53h-2.36v-13.46Z"/>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <nav class="hidden sm:flex items-center gap-8 text-xs font-bold text-[#7A8285]">
+          <a href="#sez-categorie" class="hover:text-[#4E9EAF] transition-colors">Categorie</a>
+          <a href="#sez-atleti" class="hover:text-[#4E9EAF] transition-colors">Atleti</a>
+          <a href="#sez-scadenziario" class="hover:text-[#4E9EAF] transition-colors">Scadenziario</a>
+        </nav>
+
+        <button type="button" id="btn-reset-onboarding" class="text-xs font-mono text-[#7A8285] hover:text-[#4E9EAF] underline cursor-pointer">
+          Modifica configurazione
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 max-w-6xl w-full mx-auto px-4 py-8 space-y-12">
+      
+      <!-- HERO & SCOREBOARD -->
+      <section class="border border-[#E7EBEC] rounded-sm p-6 sm:p-8 bg-white shadow-xs">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <div>
+            <p class="font-mono text-xs text-[#4E9EAF] font-bold uppercase tracking-widest mb-1">Panoramica Generale</p>
+            <h2 id="hero-title" class="text-3xl sm:text-4xl font-bold text-[#12181B]">Gestione <span id="hero-sport-name" class="text-[#4E9EAF]">ASD</span></h2>
+            <p id="hero-sub" class="text-sm text-[#7A8285] mt-1">Stato dei tesserati, visite mediche e documenti in scadenza.</p>
+          </div>
+
+          <div id="scoreboard" class="flex items-center gap-6 sm:gap-10 border-t md:border-t-0 md:border-l border-[#E7EBEC] pt-4 md:pt-0 md:pl-8">
+            <div>
+              <p class="font-mono text-[10px] text-[#7A8285] uppercase">Categorie</p>
+              <p id="stat-categorie" class="scoreboard-value">00</p>
+            </div>
+            <div>
+              <p class="font-mono text-[10px] text-[#7A8285] uppercase">Atleti Totali</p>
+              <p id="stat-atleti" class="scoreboard-value">00</p>
+            </div>
+            <div>
+              <p class="font-mono text-[10px] text-[#7A8285] uppercase">Da Rinnovare</p>
+              <p id="stat-scadenze" class="scoreboard-value text-[#C94141]">00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORIE -->
+      <section id="sez-categorie">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-xl font-bold text-[#12181B]">Categorie Attive</h3>
+          <span class="font-mono text-xs text-[#7A8285]" id="categorie-count">0</span>
+        </div>
+        <div id="categorie-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+          <!-- Dinamico JS -->
+        </div>
+      </section>
+
+      <!-- ROSTER ATLETI -->
+      <section id="sez-atleti">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h3 class="text-xl font-bold text-[#12181B]">Roster Atleti</h3>
+            <p class="text-xs text-[#7A8285]">Fai clic sulla freccia per visualizzare l'anagrafica completa</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="font-mono text-xs text-[#7A8285]" id="atleti-count">0</span>
+            <button type="button" id="btn-apri-modal-atleta" class="btn-dsd-primary py-2 px-4 text-xs">
+              + Aggiungi Atleta
+            </button>
+          </div>
+        </div>
+        <div id="atleti-list" class="space-y-3">
+          <!-- Dinamico JS -->
+        </div>
+      </section>
+
+      <!-- SCADENZIARIO -->
+      <section id="sez-scadenziario">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h3 class="text-xl font-bold text-[#12181B]">Scadenziario Moduli</h3>
+            <p class="text-xs text-[#7A8285]">Tutte le scadenze ordinate cronologicamente</p>
+          </div>
+        </div>
+        <div id="scadenziario-list" class="border border-[#E7EBEC] rounded-sm divide-y divide-[#E7EBEC] overflow-hidden bg-white shadow-xs">
+          <!-- Dinamico JS -->
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="border-t border-[#E7EBEC] bg-white py-6 mt-12">
+      <div class="max-w-6xl mx-auto px-4 text-center text-xs text-[#7A8285] font-mono">
+        Digital Sports Desk • Progetto d'esame
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ================================================================== -->
+  <!-- MODAL AGGIUNGI ATLETA                                              -->
+  <!-- ================================================================== -->
+  <div id="modal-atleta" class="fixed inset-0 bg-[#12181B]/80 flex items-center justify-center hidden z-50 p-4 backdrop-blur-xs">
+    <div class="bg-white p-6 rounded-sm w-full max-w-md max-h-[90vh] overflow-y-auto shadow-2xl border border-[#E7EBEC]">
+      <h3 class="text-xl font-bold mb-4 text-[#12181B]">Aggiungi Nuovo Atleta</h3>
+      
+      <div class="flex flex-col gap-3">
+        <div>
+          <label class="block text-xs font-medium mb-1 text-[#7A8285]">Nome e Cognome *</label>
+          <input type="text" id="nuovo-nome-atleta" placeholder="es. Marco Bianchi" class="w-full input-dsd" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <label class="block text-xs font-medium mb-1 text-[#7A8285]">Data di Nascita *</label>
+            <input type="date" id="nuova-data-nascita" class="w-full input-dsd" />
+          </div>
+          <div>
+            <label class="block text-xs font-medium mb-1 text-[#7A8285]">Luogo di Nascita</label>
+            <input type="text" id="nuovo-luogo-nascita" placeholder="es. Brescia (BS)" class="w-full input-dsd" />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <label class="block text-xs font-medium mb-1 text-[#7A8285]">Residenza</label>
+            <input type="text" id="nuova-residenza" placeholder="es. Via Roma 12" class="w-full input-dsd" />
+          </div>
+          <div>
+            <label class="block text-xs font-medium mb-1 text-[#7A8285]">Codice Fiscale</label>
+            <input type="text" id="nuovo-cf" placeholder="es. BNCCMR00A01B157X" class="w-full input-dsd uppercase" />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-medium mb-1 text-[#7A8285]">Categoria *</label>
+          <select id="nuova-cat-atleta" class="w-full input-dsd">
+            <!-- Dinamico JS -->
+          </select>
+        </div>
+
+        <div class="border-t border-[#E7EBEC] pt-3 mt-1">
+          <p class="text-xs font-bold mb-2 text-[#12181B]">Archiviazione Scadenze Moduli *:</p>
+          
+          <div class="grid grid-cols-1 gap-2">
+            <div>
+              <label class="block text-[11px] text-[#7A8285]">Scadenza Visita Medica</label>
+              <input type="date" id="scad-visita" class="w-full input-dsd py-1.5 text-xs" />
+            </div>
+            <div>
+              <label class="block text-[11px] text-[#7A8285]">Scadenza Tesseramento</label>
+              <input type="date" id="scad-tesseramento" class="w-full input-dsd py-1.5 text-xs" />
+            </div>
+            <div>
+              <label class="block text-[11px] text-[#7A8285]">Scadenza Documento Identità</label>
+              <input type="date" id="scad-ci" class="w-full input-dsd py-1.5 text-xs" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-end gap-3 mt-6">
+        <button id="btn-chiudi-modal" type="button" class="btn-dsd-secondary text-xs py-2 px-4">Annulla</button>
+        <button id="btn-salva-atleta" type="button" class="btn-dsd-primary text-xs py-2 px-5">Salva Atleta</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
